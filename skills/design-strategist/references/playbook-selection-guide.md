@@ -161,7 +161,7 @@ Sometimes the best answer is mixing 2 playbooks:
 |--------|------------|
 | User says "אני רוצה משהו כהה" | Dark Premium or Dark Funnel |
 | User says "משהו נקי ואלגנטי" | Elegant Authority or Clean Light |
-| User says "כמו של יהב רובין" | Elegant Authority (nextlevel) |
+| User says "משהו יוקרתי ומקצועי" | Elegant Authority |
 | User has a strong brand with specific colors | Hybrid with their colors |
 | The copy is 3000+ words | White DR (only style that handles this) |
 | There's a countdown/timer element | Dark Funnel |
