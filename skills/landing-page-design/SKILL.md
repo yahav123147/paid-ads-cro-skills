@@ -1,30 +1,11 @@
 ---
 name: landing-page-design
 description: "Landing page conversion optimization with layout rules, hero section design, and CTA psychology. Covers above-the-fold formula, social proof placement, mobile design, and F-pattern reading. Use for: startup landing pages, product pages, SaaS marketing, conversion optimization. Triggers: landing page, hero section, above the fold, conversion optimization, landing page design, cta button, hero image, landing page layout, saas landing page, product page design, conversion rate, landing page best practices"
-allowed-tools: Bash(infsh *)
 ---
 
 # Landing Page Design
 
-Design high-converting landing pages with AI-generated visuals via [inference.sh](https://inference.sh) CLI.
-
-## Quick Start
-
-```bash
-curl -fsSL https://cli.inference.sh | sh && infsh login
-
-# Generate a hero image
-infsh app run falai/flux-dev-lora --input '{
-  "prompt": "professional person smiling while using a laptop showing a clean dashboard interface, bright modern office, natural lighting, warm and productive atmosphere, lifestyle marketing photography",
-  "width": 1248,
-  "height": 832
-}'
-
-# Research competitor landing pages
-infsh app run tavily/search-assistant --input '{
-  "query": "best SaaS landing page examples 2024 conversion rate"
-}'
-```
+Design high-converting landing pages with proven layout patterns and conversion psychology.
 
 ## Above-the-Fold Formula
 
@@ -95,21 +76,6 @@ Everything visible before scrolling must communicate value in 5 seconds.
 ✅ The end result of using your product
 ```
 
-```bash
-# Outcome-focused hero
-infsh app run falai/flux-dev-lora --input '{
-  "prompt": "happy professional team celebrating around a laptop showing positive growth charts, bright modern office, natural sunlight, authentic candid moment, marketing photography style, warm tones",
-  "width": 1248,
-  "height": 832
-}'
-
-# Product-in-context hero
-infsh app run bytedance/seedream-4-5 --input '{
-  "prompt": "clean modern laptop on a minimalist desk showing a beautiful analytics dashboard, floating UI elements emerging from the screen, soft gradient background, product marketing style, professional",
-  "size": "2K"
-}'
-```
-
 ## CTA Buttons
 
 ### Text
@@ -161,13 +127,6 @@ The proven sequence for landing pages:
 | **Case study stats** | Specific proof | Feature sections |
 | **Trust badges** | Security/compliance | Near forms, pricing, footer |
 
-```bash
-# Research for social proof stats
-infsh app run exa/answer --input '{
-  "question": "What is the average conversion rate for SaaS landing pages with social proof vs without?"
-}'
-```
-
 ## Form Design
 
 | Rule | Impact |
@@ -191,22 +150,6 @@ infsh app run exa/answer --input '{
 | Images responsive | Don't overflow viewport |
 | Prioritize headline + CTA | Simplify above-the-fold |
 
-## OG Image for Sharing
-
-```bash
-# Generate an OG image for the landing page
-infsh app run falai/flux-dev-lora --input '{
-  "prompt": "clean professional social sharing card, product name and tagline on modern gradient background, minimal design, corporate tech aesthetic, 1200x630 aspect ratio equivalent",
-  "width": 1200,
-  "height": 630
-}'
-
-# Or use html-to-image for a template-based approach
-infsh app run infsh/html-to-image --input '{
-  "html": "<div style=\"width:1200px;height:630px;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;font-family:sans-serif;color:white\"><div style=\"text-align:center\"><h1 style=\"font-size:48px;margin:0\">DataFlow</h1><p style=\"font-size:24px;opacity:0.9\">Ship docs in minutes, not days</p></div></div>"
-}'
-```
-
 ## Page Speed
 
 | Rule | Target | Why |
@@ -229,13 +172,3 @@ infsh app run infsh/html-to-image --input '{
 | Too many form fields | Conversion drops ~11% per field | Name + email maximum |
 | Desktop-only design | 60%+ traffic is mobile | Design mobile-first |
 | No urgency in final CTA | Visitors leave and forget | "Start your free 14-day trial" |
-
-## Related Skills
-
-```bash
-npx skills add inferencesh/skills@ai-image-generation
-npx skills add inferencesh/skills@web-search
-npx skills add inferencesh/skills@prompt-engineering
-```
-
-Browse all apps: `infsh app list`
