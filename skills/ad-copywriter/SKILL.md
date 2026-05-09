@@ -12,6 +12,12 @@ You are a sub-agent inside an automated system. You do NOT speak directly to the
 Do NOT ask questions. Do NOT request additional information. Use what you receive and write.
 If information is missing - fill in from research or context. Never stop.
 
+**BEFORE WRITING:** Read `corpus/ads-corpus.md` (in this skill folder). It contains
+30+ real high-performing Hebrew ads pulled from live Meta accounts, with spend and
+CTR metrics. Study how they implement the patterns in this skill — hook patterns,
+Slippery Slide, authority weaving, voice. Use them as proof of structure, NOT as
+text to copy.
+
 ---
 
 ## PART 1: DATA INPUT - What You Receive
@@ -130,10 +136,10 @@ The ad is written from the presenter's voice. "I created", "I discovered", "I'm 
 
 #### Rule 2: EYE LEVEL - Peer, Not Guru
 
-- Sharing, not lecturing: "חושפת", "משתפת" - not "מלמדת"
-- Vulnerability mixed with authority: "לקח לי עשור של ניסוי וטעייה"
-- Conversational connectors: "שומע?", "תקשיב", "בואי נרד לשורה התחתונה"
-- Real language: "חלאס", "יאללה", "בול"
+- Sharing, not lecturing: "חושפת", "משתפת" — not "מלמדת" (the principle, not the specific verbs — pick equivalents that fit your tone)
+- Vulnerability mixed with authority: admit the failures and timelines that earned your authority, then assert the result
+- Conversational connectors at line breaks: short interjections that pull the reader forward ("תקשיב", "תיכף תבין", or your audience's equivalent)
+- One casual register marker per ad maximum, matched to your audience's actual register — don't import slang from another writer's ads
 
 #### Rule 3: SINGULAR ADDRESS - One Reader, Always
 
@@ -222,6 +228,65 @@ Challenge assumptions to create cognitive dissonance.
 - A generic question ("רוצה להצליח?")
 - Completing the entire value proposition in the hook
 - A hook without a number, name, or concrete detail
+
+---
+
+## PART 3.5: THE SLIPPERY SLIDE - Master Frame for the Entire Ad
+
+The Slippery Slide is the unifying principle that makes everything in this skill work
+together. Coined by Joe Sugarman: every line of the ad exists to do one job — pull the
+reader into the next line. The hook is the top of the slide. Each subsequent line is
+another step that the reader cannot help but take. The reader doesn't decide to keep
+reading; the structure of each line removes the option to stop.
+
+If a single line in the body of your ad fails to pull the reader forward, the slide
+breaks. Once the slide breaks, the reader scrolls away, and nothing later in the ad
+matters.
+
+### Why this matters more than any single technique
+
+The 7 hook patterns (Part 3), Authority Weaving (Part 4), 19 Ad Types (Part 6),
+Curiosity Seeds (Part 11) — these are all techniques that serve the slide. The hook
+pattern starts the slide. Authority weaving keeps the slide credible. Curiosity seeds
+are the wax that keeps the slide slippery. Open Loops (Core Technique #5) extend the
+slide.
+
+If you write each section as a "section" — hook, problem, solution, CTA — you'll get a
+structurally correct ad that doesn't slide. The reader bounces off each transition.
+
+If you write each LINE as a step on the same continuous slide, the structural sections
+disappear from the reader's perception. They just keep reading.
+
+### How to engineer the slide line-by-line
+
+1. **Every line ends with forward pull.** Use one of these line-end devices on most lines:
+   - **Conjunction cliff:** end with "אבל", "פלוס", "ולמרות זאת", "חוץ מ", "שזה אומר ש..." — the reader's brain demands the rest.
+   - **Unfinished thought:** sentence breaks mid-clause. The next line completes it.
+   - **Curiosity question:** "אבל הנה הקטע הכי טוב..." / "ואז זה הכה בי..." (use Curiosity Seeds from Part 11)
+   - **Promise of payoff:** "תיכף תבין למה זה משנה הכל"
+   - **Pattern interrupt:** a 2-3 word line after a long line breaks rhythm and creates a forced re-engagement.
+
+2. **Every line contains exactly one idea.** Two ideas in a line = one of them is competing for attention with the line-end pull. Cut, split, or fold one into the next line.
+
+3. **Hook → first body line is the highest-risk transition.** The reader committed to the hook because of the open loop. The first body line must NOT immediately resolve the loop — that's the moment they leave. The first body line continues the curiosity, doesn't deliver it.
+
+4. **Authority bursts mid-slide, never as their own section.** When you deploy authority (Part 4), bake it into a line that's also doing slide work — never a stand-alone "by the way, I'm credible" paragraph.
+
+5. **Reveal the value 60-70% of the way down, not at the top.** The slide accelerates as it goes. Save the biggest payoff (the offer + its key benefit) for the bottom-third — by then the reader has slid too far to bail.
+
+### The scroll test (run before submitting any ad)
+
+Read ONLY the first word of each line, in order. If the rhythm has momentum and your
+brain wants to keep going — the slide is working. If you find yourself stopping or
+re-reading at any point — that's where the slide broke. Edit the line that comes
+before the break.
+
+### Slide failures to avoid
+
+- **Section headers in the body** (like "Now, let me tell you about..." / "אז בוא נדבר על...") — these are speed bumps. Cut them and let the next line continue the previous line's pull.
+- **Self-contained sentences** — a line that says one complete thought and stops doesn't pull. Add a conjunction cliff or break it into two lines.
+- **Resolving curiosity too soon** — once the reader knows the answer, the slide ends. Always plant a new loop before closing the previous one.
+- **Long lines (more than 5-7 words)** — the reader's eye loses momentum. Visual structure (Part 13) IS slide engineering — those rules aren't cosmetic.
 
 ---
 
