@@ -5,8 +5,8 @@ description: |
   the optimal visual style, color palette, and design direction for a landing page.
   Triggers: "איזה עיצוב מתאים", "design strategy", "בחר סגנון", "צבעי מותג",
   "design direction", or when invoked between copy generation and page building.
-  Outputs a Design Brief JSON that the design agent consumes.
-version: 1.0.0
+  Outputs a Design Brief JSON that the yahav-design-agent consumes.
+version: 1.1.0
 ---
 
 # Design Strategist — סוכן אסטרטגיה עיצובית
@@ -119,11 +119,11 @@ After user approves, output a **Design Brief** that the design agent consumes:
 2. **Tell the user:**
    "האסטרטגיה העיצובית מוכנה! עכשיו אני עובר ישירות לבניית הדף..."
 
-3. **The orchestrator will automatically invoke** the design agent in the SAME conversation
+3. **The orchestrator will automatically invoke** `/yahav-design-agent` in the SAME conversation
 
 **NEVER output:**
 - ❌ "העתק את ה-Design Brief"
-- ❌ "פתח שיחה חדשה עם the design agent"
+- ❌ "פתח שיחה חדשה עם yahav-design-agent"
 - ❌ "דרך 3 — בנייה"
 
 **Instead:**
@@ -134,12 +134,16 @@ After user approves, output a **Design Brief** that the design agent consumes:
 
 ## The 7 Available Playbooks
 
-### 1. WOW Dark Premium (Default)
-- **Palette:** Black #0a0a0a, gold #d4af37, yellow CTA #f59e0b
+### 1. WOW Dark Premium (Default "Yahav Style")
+- **Palette:** Black #0a0a0a, gold #d4af37 (single accent), gold-light #f5d76e (only for CTA gradient + glow). NO amber/orange CTA — use gold gradient.
 - **Vibe:** Exclusive, high-tech, premium
 - **Best for:** Tech/AI products, high-energy launches, "million dollar" positioning
+- **Reference pages (canonical):** `/next-level-club`, `/nlc-thailand-dark`, `/CLAUDE-CODE-V3`. Study these BEFORE building — match their visual language, don't invent.
 - **Animation:** WOW level — dramaticScale, shimmer, glowPulse, stagger
-- **Transitions:** Gradient dividers (120px dark↔light)
+- **Transitions:** Subtle gradient fade dividers (64px) between sections, NOT hard 120px wedges
+- **Required helpers:** `GlassCard`, `GoldLine`, `GoldDivider`, `AmbientGlow`, gold-gradient `CTAButton` (see yahav-design-agent skill)
+- **Color discipline (HARD):** ONE gold for hooks, white for body, bold for emphasis (never color change). Red ONLY for hero death frame / urgency clock — NEVER for highlighting cost numbers in body.
+- **Anti-template:** No pill badges with pulsing dots. No 3-card alert/info/success rows. No stat-card grids with gradient backgrounds. No solid amber CTAs. (Full list in yahav-design-agent skill.)
 
 ### 2. Elegant Authority (Navy + Gold)
 - **Palette:** Navy #1D2B46, muted gold #D4B160, white, gray #F4F4F4
@@ -242,6 +246,6 @@ For speed, use these quick rules when the answer is obvious:
 
 ## Related Skills
 
-- `copywriting` — generates the copy you analyze
-- `frontend-design` — builds the page from your brief
-- `landing-page-design` — layout rules for landing pages
+- `yahav-copy-agent` — generates the copy you analyze
+- `yahav-design-agent` — builds the page from your brief
+- `landing-page` — orchestrates the full workflow
