@@ -119,7 +119,7 @@ Depth judgment: spend more time on core flows (homepage, dashboard, checkout, fo
 
 - **Interactive bugs** (broken flow, dead button, form failure): screenshot before the action, perform the action, screenshot the result, and `take_snapshot` after to show what changed (or did not change) versus the pre-action snapshot.
 - **Static bugs** (typo, layout, missing image): one screenshot showing the problem plus a description.
-- Every issue gets an ID (ISSUE-001...), severity (critical/high/medium/low), category, and repro steps. Retry once before documenting to confirm it is reproducible and not a fluke.
+- Every issue gets an ID (ISSUE-001...), severity (critical/high/medium/low), category, and repro steps. Full severity and category definitions: `references/issue-taxonomy.md` in this skill's folder. Retry once before documenting to confirm it is reproducible and not a fluke.
 
 ### Health Score
 
